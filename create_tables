@@ -1,0 +1,10 @@
+Create table Patients (pid INTEGER PRIMARY KEY,Age int, Status varchar(20), Area varchar(20), District varchar(20), State varchar(20), did int);
+
+
+Create table District (did int, pid int, Area varchar(20), Status varchar(20), District varchar(20));
+
+
+Create table State ( did int, Total_Patients int, Active int, Deaths int, Recovered int, District int);
+
+
+Create table Containment( Total_Patients int, Active int, Recovered int, Deaths int, District varchar(20));
